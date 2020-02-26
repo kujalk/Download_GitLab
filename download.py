@@ -26,6 +26,6 @@ for i in range(len(data)):
 
     download_repo=requests.get(url=download_url,verify=False)
 
-    path="E:\All_Source_Codes_NUS_Singtel\\"+data[i]['name']+".zip"
+    path="E:\All_Source_Codes\\"+data[i]['name']+".zip"
     with open(path, 'wb') as s:
         s.write(download_repo.content)
