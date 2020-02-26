@@ -17,7 +17,6 @@ response=requests.get(url=url,verify=False)
 data=response.json()
 
 print("Total Repos : ",len(data))
-print ("Repo Name : ",data[0]['name'])
 
 for i in range(len(data)):
     print ("\nRepo ID : ",data[i]['id'])
